@@ -68,6 +68,10 @@ export const aboutItems = [
     id: 5,
     label: "Performance optimization",
   },
+  {
+    id: 6,
+    label: "Java & Springboot development",
+  },
 ];
 
 export const ResumeItems = [
@@ -76,18 +80,23 @@ export const ResumeItems = [
     title: "Experience",
     list: [
       {
-        role: "Senior Frontend Developer",
-        label: "TechCorp",
+        role: "Software Engineer",
+        label: "Hatchyard",
         time: "2022-Present",
       },
       {
-        label: "StartupXYZ",
-        role: "Frontend Developer",
+        label: "Hatchyard",
+        role: "Intern SOftware Engineer",
         time: "2020-2022",
       },
       {
-        label: "WebAgency",
+        label: "Nalalabs",
         role: "Junior Developer",
+        time: "2019-2020",
+      },
+      {
+        label: "People's Bank",
+        role: "Trainee Assistant",
         time: "2019-2020",
       },
     ],
@@ -97,8 +106,8 @@ export const ResumeItems = [
     title: "Education",
     list: [
       {
-        label: "University of California",
-        role: "Computer Science Degree",
+        label: "University of Kelaniya",
+        role: "Bsc(hons) in Software Engineering",
         time: "2019",
       },
       {
@@ -113,27 +122,28 @@ export const ResumeItems = [
 export const ProjectsItems = [
   {
     id: 1,
-    title: "Porfolio 1",
+    title: "AI Image Generator",
     src: "/images/portfolio-1.png",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
+    text: "A full-stack MERN application that uses OpenAI's DALL-E model to generate unique images from text prompts. Features user authentication, cloud storage for generated images, and a community showcase.",
+    githubUrl: "https://github.com/KavinduAbeywickrama/ai-image-generator",
   },
   {
     id: 2,
-    title: "Porfolio 2",
+    title: "Netflix Clone - UI",
     src: "/images/portfolio-2.png",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
+    text: "A responsive front-end clone of the Netflix homepage built with React. It includes a dynamic hero section, movie rows by category, and a hover effect to show more information about a title.",
   },
   {
     id: 3,
-    title: "Porfolio 3",
+    title: "Weather App",
     src: "/images/portfolio-3.png",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
+    text: "A clean and modern weather application that fetches data from a weather API to display current conditions and forecasts for any city. Features a search function and dynamic weather icons.",
   },
   {
     id: 4,
-    title: "Porfolio 4",
+    title: "Portfolio Website",
     src: "/images/portfolio-4.png",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
+    text: "The source code for this very portfolio! Built with a modern front-end framework (like React/Next.js) to showcase projects and skills with a clean and interactive design.",
   },
 ];
 
@@ -141,16 +151,16 @@ export const contactItems = [
   {
     id: 1,
     label: "Email:",
-    link: "alexchen.dev@gmail.com",
+    link: "agckavindu@gmail.com",
   },
   {
     id: 2,
     label: "Phone:",
-    link: "+1 (415) 892-7643",
+    link: "+94 71 9697218",
   },
   {
     id: 3,
     label: "Location:",
-    link: "San Francisco, CA",
+    link: "Colombo, Sri-Lanka",
   },
 ];
