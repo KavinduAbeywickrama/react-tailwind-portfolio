@@ -40,12 +40,22 @@ const Contact = () => {
             variants={fadeIn}
             className="flex items-center gap-2 mt-6"
           >
-            <button className="hover:text-neutral-300 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/k-abeywickrama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-neutral-300 transition-colors"
+            >
               <RiLinkedinBoxFill size={30} />
-            </button>
-            <button className="hover:text-neutral-300 transition-colors">
+            </a>
+            <a
+              href="https://github.com/KavinduAbeywickrama"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-neutral-300 transition-colors"
+            >
               <RiGithubFill size={30} />
-            </button>
+            </a>
           </motion.div>
         </div>
 
