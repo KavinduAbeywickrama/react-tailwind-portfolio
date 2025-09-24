@@ -7,6 +7,13 @@ import { BackgroundGradient } from "./ui/BackgroundGradient ";
 import { motion } from "motion/react";
 import { fadeIn, fadeInUp, staggerContainer } from "../motion/animation";
 
+const handleDownloadCV = () => {
+  const link = document.createElement("a");
+  link.href = "/CV.pdf"; 
+  link.download = "CV.pdf";
+  link.click();
+};
+
 const Hero = () => {
   return (
     <section className="py-28 lg:pt-40" id="home">
@@ -63,7 +70,7 @@ const Hero = () => {
           </motion.div>
           {/* btn wrapper */}
           <motion.div variants={fadeInUp} className="mt-10 flex items-center justify-center flex-wrap gap-5">
-            <Button label="Download CV" classes="primary-btn" icon />
+            <Button label="Download CV" classes="primary-btn" icon onClick={handleDownloadCV} />
             <Button label="Let's Talk" classes="secondary-btn" />
           </motion.div>
         </div>
