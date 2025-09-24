@@ -1,6 +1,10 @@
 import React from "react";
 import { contactItems } from "../constant/data";
-import { RiLinkedinBoxFill, RiGithubFill } from "@remixicon/react";
+import {
+  RiLinkedinBoxFill,
+  RiGithubFill,
+  RiMediumFill,
+} from "@remixicon/react";
 
 //motion
 import { motion } from "motion/react";
@@ -55,6 +59,14 @@ const Contact = () => {
               className="hover:text-neutral-300 transition-colors"
             >
               <RiGithubFill size={30} />
+            </a>
+            <a
+              href="https://medium.com/@agckavindu/about"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-neutral-300 transition-colors"
+            >
+              <RiMediumFill size={30} />
             </a>
           </motion.div>
         </div>

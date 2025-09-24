@@ -2,6 +2,7 @@ import {
   RiFacebookBoxFill,
   RiGithubFill,
   RiLinkedinFill,
+  RiMediumFill,
 } from "@remixicon/react";
 
 export const navItems = [
@@ -47,6 +48,11 @@ export const heroIcons = [
     id: 3,
     icon: RiGithubFill,
     url: "https://github.com/KavinduAbeywickrama",
+  },
+  {
+    id: 4,
+    icon: RiMediumFill,
+    url: "https://medium.com/@agckavindu/about",
   },
 ];
 
