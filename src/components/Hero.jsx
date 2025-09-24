@@ -9,9 +9,16 @@ import { fadeIn, fadeInUp, staggerContainer } from "../motion/animation";
 
 const handleDownloadCV = () => {
   const link = document.createElement("a");
-  link.href = "/CV.pdf"; 
+  link.href = "/CV.pdf";
   link.download = "CV.pdf";
   link.click();
+};
+
+const handleNavigateToContact = () => {
+  const contactSection = document.getElementById("contact");
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
 };
 
 const Hero = () => {
@@ -48,7 +55,10 @@ const Hero = () => {
             Hi, I'm Kavindu Abeywickrama{" "}
           </motion.h1>
           <motion.h2 variants={fadeInUp}> Software Engineer </motion.h2>
-          <motion.p variants={fadeInUp} className="max-w-[820px] mx-auto mt-4 mb-6">
+          <motion.p
+            variants={fadeInUp}
+            className="max-w-[820px] mx-auto mt-4 mb-6"
+          >
             A software engineering graduate, and a highly motivated and
             dedicated individual with a passion for coding and technology. I
             thrive in challenging situations and enjoy tackling complex coding
@@ -57,7 +67,10 @@ const Hero = () => {
             innovative software applications.
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="flex items-center justify-center gap-5">
+          <motion.div
+            variants={fadeInUp}
+            className="flex items-center justify-center gap-5"
+          >
             {heroIcons.map((icon) => (
               <a
                 href="#"
@@ -69,9 +82,21 @@ const Hero = () => {
             ))}
           </motion.div>
           {/* btn wrapper */}
-          <motion.div variants={fadeInUp} className="mt-10 flex items-center justify-center flex-wrap gap-5">
-            <Button label="Download CV" classes="primary-btn" icon onClick={handleDownloadCV} />
-            <Button label="Let's Talk" classes="secondary-btn" />
+          <motion.div
+            variants={fadeInUp}
+            className="mt-10 flex items-center justify-center flex-wrap gap-5"
+          >
+            <Button
+              label="Download CV"
+              classes="primary-btn"
+              icon
+              onClick={handleDownloadCV}
+            />
+            <Button
+              label="Let's Talk"
+              classes="secondary-btn"
+              onClick={handleNavigateToContact}
+            />
           </motion.div>
         </div>
       </motion.div>
