@@ -73,8 +73,10 @@ const Hero = () => {
           >
             {heroIcons.map((icon) => (
               <a
-                href="#"
+                key={icon.id}
+                href={icon.url}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-indigo-400 transition-colors"
               >
                 <icon.icon size={30} />

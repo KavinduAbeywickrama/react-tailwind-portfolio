@@ -36,14 +36,17 @@ export const heroIcons = [
   {
     id: 1,
     icon: RiLinkedinFill,
+    url: "https://www.linkedin.com/in/k-abeywickrama/",
   },
   {
     id: 2,
     icon: RiFacebookBoxFill,
+    url: "https://www.facebook.com/profile.php?id=100057182983955",
   },
   {
     id: 3,
     icon: RiGithubFill,
+    url: "https://github.com/KavinduAbeywickrama",
   },
 ];
 
